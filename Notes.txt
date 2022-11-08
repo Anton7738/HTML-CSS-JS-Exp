@@ -1,0 +1,19 @@
+Javascript
+========================================
+
+Uses two different runtimes
+
+	1. NodeJS runtime (backend)
+	2. Browser runtime (ie. V8 Engine @ Chrome, SpiderMonkey @ Firefox)
+
+>> const variable = 20; -> declared, initialized (cannot reassign)
+
+>> let counter = 0; -> declared (can be reassigned)
+>> counter = counter++;
+>> counter
+1
+
+>> const variable1 = 10;
+>> typeof variable1;
+"number"
+
