@@ -3,9 +3,44 @@
 
 <head>
 <title> Sample Page </title>
+
 <link type = "text/css" ref="stylesheet" href="sample2.css">
 <link type="text/javascript" src="sample3.js">
+
+<style>
+	button {
+		background-color: transparent;
+		border: 1px solid red;
+		padding: 20px;
+		font-size: 1.4rem;
+	}
+
+	button:hover {
+		background-color: red;
+		border: none;
+		color: white;
+	}
+
+</style>
 </head>
 
-<div class="rec"></div>
+<body>
+
+<p> Hello world</p>
+<button> CLICK HERE! </button>
+
+<! -- function creation and usage -->
+<div class="container"></div>
+<script>
+	function onClick() {
+		const a = document.createElement('p');
+		a.innerText = 'Clicked';
+		document.querySelector('.container').appendChild(a);
+	}
+	
+	document.querySelector('button').onclick = onClick;
+</script>
+
+</body>
+
 </html>
