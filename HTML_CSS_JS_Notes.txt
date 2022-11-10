@@ -1,0 +1,62 @@
+Javascript
+========================================
+
+Uses two different runtimes
+
+	1. Node.js runtime (backend)
+	2. Browser runtime (ie. V8 Engine @ Chrome, SpiderMonkey @ Firefox)
+
+
+----------------- Variables ----------------
+(cannot reassign)
+>> const variable = 20; -> declared, initialized 
+
+(can be reassigned)
+>> let counter = 0; -> declared 
+>> counter = counter++;
+>> counter
+1
+
+------------------- Types ------------------
+>> const variable1 = 10;
+>> typeof variable1;
+"number"
+
+------------------- Arrays -----------------
+>> const firstArray = [10, 'hello', {prop : 'abcdef'}, [1, 2]];
+>> console.log(firstArray[3]);
+Array [ 1, 2 ]
+
+>> console.log(firstArray[3][0]);
+1
+
+------------------- Objects ----------------
+>> const objectVariable = { prop1: 10, prop2: 20};
+>> objectVariable.prop1
+10
+
+>> const nestedObject = {
+	layer1: {
+		layer2: {
+			layer3: {
+				layer4: 100...
+>> nestedObject.layer1.layer2.layer3.layer4;
+100
+
+------------------ Functions ---------------
+>> const functionContainerVariable = function() {
+	return 10;
+   }
+>> functionContainerVariable();
+10
+
+----------------- Operators ----------------
+
+== compares value -->  20 == '20' TRUE
+
+=== compares value and type -->  20 === '20' FALSE
+
+--------------- Random Function ------------
+
+>> const colors = ['red', 'orange', 'yellow', 'green', 'blue']
+>> const randomIndex = Math.floor(Math.random() * colors.length);
